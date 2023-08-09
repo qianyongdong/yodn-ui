@@ -1,0 +1,28 @@
+{
+  "name": "zan-ui",
+  "version": "1.0.7",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [
+    "zan-ui",
+    "vue3组件库"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "author": "qianyongdong",
+  "license": "MIT",
+  "description": "",
+  "typings": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qianyongdong/zan-ui"
+  },
+  "dependencies": {
+    "@zan-ui/utils": "^1.0.2"
+  }
+}

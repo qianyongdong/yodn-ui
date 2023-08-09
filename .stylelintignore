@@ -1,0 +1,4 @@
+**.d.ts
+/packages/zan-ui
+dist
+node_modules
