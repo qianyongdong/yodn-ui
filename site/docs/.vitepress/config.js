@@ -1,6 +1,6 @@
 export default {
   title: 'yodn-ui',
-  base: process.env.NODE_ENV === 'production' ? '/yodn-ui/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/yodn/' : '/',
   themeConfig: {
     nav: [{ text: '文档', link: '/guild/introduce' }],
     sidebar: {
