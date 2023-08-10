@@ -13,7 +13,7 @@
   "scripts": {
     "build:yodn-ui": "gulp -f packages/components/script/build/index.ts & pnpm run --filter ./packages/utils build",
     "publish:yodn-ui": "gulp -f packages/components/script/publish/index.ts",
-    "publish:easayestutils": "gulp -f packages/utils/publish/index.ts",
+    "publish:yodn-uiutils": "gulp -f packages/utils/publish/index.ts",
     "docs:dev": "pnpm run --filter site docs:dev",
     "docs:build": "pnpm run --filter site docs:build",
     "docs:deploy": "pnpm run --filter site docs:deploy",
