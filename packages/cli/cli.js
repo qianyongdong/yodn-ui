@@ -48,8 +48,7 @@ const promptsOptions = [
     name: 'template',
     message: '请选择一个模板',
     choices: [
-      { title: 'kitty-ui', value: 1 },
-      { title: 'yodn-ui', value: 2 }
+      { title: 'yodn-ui', value: 1 }
     ]
   }
 ];
