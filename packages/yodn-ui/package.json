@@ -1,0 +1,29 @@
+{
+  "name": "yodn-ui",
+  "version": "1.0.4",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [
+    "yodn-ui",
+    "yodn-ui",
+    "vue3组件库"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "author": "qianyongdong",
+  "license": "MIT",
+  "description": "",
+  "typings": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qianyongdong/yodn-ui"
+  },
+  "dependencies": {
+    "@yodn-ui/utils": "^1.0.2"
+  }
+}
