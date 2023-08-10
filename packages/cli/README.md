@@ -12,7 +12,7 @@
 
 ## 官网地址
 
-[yodn-ui](https://yodn-uiui.github.io/yodn-ui/)
+[yodn-ui](https://qianyongdong.github.io/yodn-ui/)
 
 ## 技术交流群
 

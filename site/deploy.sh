@@ -9,7 +9,7 @@ npm run docs:build
 # 进入待发布的目录
 cd docs/.vitepress/dist
 
-git remote add yodn-ui https://github.com/yodn-uiui/yodn-ui.git
+git remote add yodn-ui https://github.com/qianyongdong/yodn-ui.git
 git add -A
 git commit -m 'deploy'
 
