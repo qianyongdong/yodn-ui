@@ -30,7 +30,7 @@ export default defineConfig({
     },
     lib: {
       entry: './index.ts',
-      name: 'zan-uiutils'
+      name: 'yodn-uiutils'
     }
   },
 

@@ -1,12 +1,12 @@
 {
-  "name": "@zan-ui/utils",
+  "name": "@yodn-ui/utils",
   "version": "1.0.2",
   "main": "./dist/lib/index.js",
   "module": "./dist/es/index.js",
-  "description": "zan-ui公共函数",
+  "description": "yodn-ui公共函数",
   "keywords": [
-    "zan-ui",
-    "zan-ui"
+    "yodn-ui",
+    "yodn-ui"
   ],
   "files": [
     "dist"

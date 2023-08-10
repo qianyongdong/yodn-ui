@@ -1,12 +1,12 @@
 import { _ as s, c as a, o as n, a as e } from "./app.534f1f63.js"; const y = JSON.parse('{"title":"目录结构","description":"","frontmatter":{},"headers":[],"relativePath":"develop/index.md"}'), l = { name: "develop/index.md" }, p = e(`<h1 id="目录结构" tabindex="-1">目录结构 <a class="header-anchor" href="#目录结构" aria-hidden="true">#</a></h1><br><br><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight" tabindex="0"><code><span class="line"><span style="color:#A6ACCD;">-- packages</span></span>
 <span class="line"><span style="color:#A6ACCD;"></span></span>
-<span class="line"><span style="color:#A6ACCD;">  -- cli 脚手架(create-zan-ui)</span></span>
+<span class="line"><span style="color:#A6ACCD;">  -- cli 脚手架(create-yodn-ui)</span></span>
 <span class="line"><span style="color:#A6ACCD;"></span></span>
-<span class="line"><span style="color:#A6ACCD;">  -- components 本地开发组件库(@zan-ui/components)</span></span>
+<span class="line"><span style="color:#A6ACCD;">  -- components 本地开发组件库(@yodn-ui/components)</span></span>
 <span class="line"><span style="color:#A6ACCD;"></span></span>
-<span class="line"><span style="color:#A6ACCD;">  -- zan-ui 打包后组件库,既要发布的组件库(zan-ui)</span></span>
+<span class="line"><span style="color:#A6ACCD;">  -- yodn-ui 打包后组件库,既要发布的组件库(yodn-ui)</span></span>
 <span class="line"><span style="color:#A6ACCD;"></span></span>
-<span class="line"><span style="color:#A6ACCD;">  -- utils 工具包(@zan-ui/utils)</span></span>
+<span class="line"><span style="color:#A6ACCD;">  -- utils 工具包(@yodn-ui/utils)</span></span>
 <span class="line"><span style="color:#A6ACCD;"></span></span>
 <span class="line"><span style="color:#A6ACCD;">-- play 测试开发组件库的Vue3项目目录</span></span>
 <span class="line"><span style="color:#A6ACCD;"></span></span>

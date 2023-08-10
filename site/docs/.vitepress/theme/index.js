@@ -1,5 +1,5 @@
 import DefaultTheme from "vitepress/theme";
-import zan-ui from "zan-ui"
+import yodn-ui from "yodn-ui"
 export default {
     ...DefaultTheme,
     enhanceApp: async ({ app }) => {

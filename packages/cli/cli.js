@@ -16,7 +16,7 @@ const optionDefinitions = [
 //帮助命令
 const helpSections = [
   {
-    header: 'create-zan-ui',
+    header: 'create-yodn-ui',
     content: '一个快速生成组件库搭建环境的脚手架'
   },
   {
@@ -49,15 +49,14 @@ const promptsOptions = [
     message: '请选择一个模板',
     choices: [
       { title: 'kitty-ui', value: 1 },
-      { title: 'zan-ui', value: 2 }
+      { title: 'yodn-ui', value: 2 }
     ]
   }
 ];
 const options = commandLineArgs(optionDefinitions);
 
 const remoteList = {
-  // 1: 'https://gitee.com/geeksdidi/kittyui.git',
-  1: 'https://github.com/qianyongdong/zan-ui.git'
+  1: 'https://github.com/qianyongdong/yodn-ui.git'
 };
 const getUserInfo = async () => {
   const res = await prompts(promptsOptions);

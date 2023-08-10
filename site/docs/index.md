@@ -1,23 +1,23 @@
 ---
 layout: home
 
-title: zan-ui
+title: yodn-ui
 titleTemplate: 一个快速搭建Vue3组件库的框架
 
 hero:
-  name: zan-ui
+  name: yodn-ui
   text: 一个快速搭建Vue3组件库的框架
   tagline: 让你的组件库开发更简单
   image:
     /src: /logo.png
-    alt: zan-ui
+    alt: yodn-ui
   actions:
     - theme: brand
       text: 开始
       link: /guild/introduce
     - theme: alt
       text: 在 GitHub 上查看
-      link: https://github.com/qianyongdong/zan-ui
+      link: https://github.com/qianyongdong/yodn-ui
 
 features:
   - icon: 💡

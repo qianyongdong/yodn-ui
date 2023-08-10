@@ -24,7 +24,7 @@ const delPath = async (path: string) => {
       }
     });
 
-    if (path != `${pkgPath}/zan-ui`) fs.rmdirSync(path);
+    if (path != `${pkgPath}/yodn-ui`) fs.rmdirSync(path);
   }
 };
 export default delPath;

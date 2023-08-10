@@ -1,6 +1,6 @@
 export default {
-  title: 'zan-ui',
-  base: process.env.NODE_ENV === 'production' ? '/zan-ui/' : '/',
+  title: 'yodn-ui',
+  base: process.env.NODE_ENV === 'production' ? '/yodn-ui/' : '/',
   themeConfig: {
     nav: [{ text: '文档', link: '/guild/introduce' }],
     sidebar: {
@@ -43,6 +43,6 @@ export default {
       ]
     },
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/qianyongdong/zan-ui' }]
+    socialLinks: [{ icon: 'github', link: 'https://github.com/qianyongdong/yodn-ui' }]
   }
 };
