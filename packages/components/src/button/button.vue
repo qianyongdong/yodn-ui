@@ -1,5 +1,5 @@
 <template>
-  <button class="ea-button" :class="buttonStyle">
+  <button class="y-button" :class="buttonStyle">
     <slot />
   </button>
 </template>
@@ -7,7 +7,7 @@
 <script lang="ts" setup>
 import './style/index.less';
 import { computed } from 'vue';
-defineOptions({ name: 'ea-button' });
+defineOptions({ name: 'y-button' });
 type ButtonProps = {
   type?: string;
   size?: string;
@@ -15,6 +15,6 @@ type ButtonProps = {
 const buttonProps = defineProps<ButtonProps>();
 
 const buttonStyle = computed(() => {
-  return { [`ea-button--${buttonProps.type}`]: buttonProps.type };
+  return { [`y-button--${buttonProps.type}`]: buttonProps.type };
 });
 </script>

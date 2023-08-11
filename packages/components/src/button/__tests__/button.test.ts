@@ -20,6 +20,6 @@ describe('test button', () => {
         type: 'primary'
       }
     });
-    expect(wrapper.classes()).toContain('ea-button--primary');
+    expect(wrapper.classes()).toContain('y-button--primary');
   });
 });

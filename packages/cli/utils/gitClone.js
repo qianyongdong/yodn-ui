@@ -13,10 +13,6 @@ export default (remote, name, option) => {
         return;
       }
       downSpinner.succeed(chalk.green('模板下载成功！'));
-      console.log(chalk.green(`cd ${name}\r\n`));
-      console.log(chalk.blue('pnpm install\r\n'));
-      console.log('pnpm run build:yodn-ui\r\n');
-      console.log('pnpm run yodn-ui:dev\r\n');
       resolve();
     });
   });

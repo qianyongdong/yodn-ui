@@ -1,6 +1,6 @@
 {
   "name": "create-yodn-ui",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "bin": "index.js",
   "keywords": [
@@ -17,9 +17,11 @@
   "dependencies": {
     "chalk": "^5.2.0",
     "command-line-args": "^5.2.1",
+    "command-line-usage": "^6.1.3",
     "download-git-repo": "^3.0.2",
+    "ejs": "^3.1.9",
     "ora": "^6.1.2",
-    "prompts": "^2.4.2",
-    "command-line-usage": "^6.1.3"
+    "prettier": "^2.8.4",
+    "prompts": "^2.4.2"
   }
 }

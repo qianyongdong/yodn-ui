@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ea-button>按钮</ea-button>
+    <y-button>按钮</y-button>
     <Button>123</Button>
   </div>
 </template>
