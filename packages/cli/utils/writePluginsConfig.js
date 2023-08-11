@@ -2,8 +2,10 @@ import chalk from 'chalk';
 import ora from 'ora';
 import { createPackageTemplate } from './packageTemplate.js'
 import { createMainTemplate } from './mainTemplate.js'
+import { createAppTemplate } from './appTemplate'
 import { downlondPlugin } from './downlondPlugin.js'
-export function writePluginsConfig(plugins, rootPath) {
+export function writePluginsConfig(plugins, rootName) {
+    const rootPath = `./${rootName}/`
     const downSpinner = ora('正在写入插件...').start();
     return new Promise((resolve, reject) => {
         try {
@@ -26,10 +28,12 @@ export function writePluginsConfig(plugins, rootPath) {
             // }
 
             //第二种方式 模板写入package.json
-            fs.writeFileSync(rootPath + "/package.js", createPackageTemplate(plugins));
+            fs.writeFileSync(rootPath + "/package.json", createPackageTemplate(plugins, rootName));
             //2.模板写入main.js
-            fs.writeFileSync(rootPath + "/main.js", createMainTemplate(plugins));
-            //3.下载对应的插件配置文件
+            fs.writeFileSync(rootPath + "/src/main.ts", createMainTemplate(plugins));
+            //3.模板写入App.vue
+            fs.writeFileSync(rootPath + "/src/App.vue", createAppTemplate(plugins));
+            //4.下载对应的插件配置文件
             downlondPlugin(plugins, rootPath).then(response => {
                 //完毕
                 downSpinner.succeed(chalk.green('写入插件成功！'));

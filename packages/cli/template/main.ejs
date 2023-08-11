@@ -1,0 +1,6 @@
+import { createApp } from "vue"; import "./style.css"; import App from
+"./App.vue"; import yodnui from "yodn-ui"; <% if (config["vue-router"]) { %>
+import router from './router'; <% } %> <% if (config["store"]) { %> import store
+from './store'; <% } %> createApp(App) .use(yodnui) <% if
+(config["vue-router"]){ %> .use(router) <% } %> <% if (config["store"]) { %>
+.use(store) <% } %> .mount("#app");

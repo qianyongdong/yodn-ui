@@ -9,7 +9,7 @@ import path from 'path';
 export function createMainTemplate() {
     const template = fs.readFileSync(path.resolve('../template/main.ejs').replace(/\\/g, '/'), 'utf-8');
     const code = ejs.render(template, {
-        router: false
+        config: config,
     })
     return prettier.format(code, {
         parser: "babel"

@@ -79,7 +79,7 @@ const getUserInfo = async () => {
     return
   }
   //写入插件并配置
-  const pluginsConfig = await writePluginsConfig(res.plugins, `./${res.name}/`);
+  const pluginsConfig = await writePluginsConfig(res.plugins, res.name);
 
   if (!pluginsConfig) {
     //没成功 直接退出

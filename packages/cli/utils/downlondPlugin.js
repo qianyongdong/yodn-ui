@@ -21,7 +21,8 @@ async function downloadFile(url, dest) {
 const pluginFolderNames = {
     "vue-router": "router",
     "pinna": "store",
-    "axios": "api"
+    "axios": "api",
+    "views": "views"
 }
 /**
  * 下载用户选择的插件文件夹到指定的目标文件夹
@@ -32,6 +33,10 @@ const pluginFolderNames = {
 export function downlondPlugin(plugins, targetDir) {
     return new Promise(async (resolve, reject) => {
         try {
+            //如果有vue-router额外下载views
+            if (plugins["vue-router"]) {
+                plugins.push("views")
+            }
             for (const plugin of plugins) {
                 // 构建插件文件夹的完整 URL
                 const pluginUrl = `../template/${plugin}.zip`; // 替换成实际的插件文件夹的 URL
@@ -46,7 +51,6 @@ export function downlondPlugin(plugins, targetDir) {
                 // 删除已下载的插件文件夹压缩包
                 fs.unlinkSync(pluginZipPath);
             }
-
             // 所有插件文件夹下载完成，解析 Promise
             resolve();
         } catch (error) {

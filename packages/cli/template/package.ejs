@@ -1,2 +1,31 @@
-const pluginVersion = { "vue-router": "^4.x.x", "pinna": "^2.x.x", "axios":
-"^1.x.x" }
+{
+    "name": <%= packageName %>,
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+      "dev": "vite",
+      "build": "vue-tsc && vite build",
+      "preview": "vite preview"
+    },
+    "dependencies": {
+      "vue": "^3.3.4",
+      "yodn-ui": "^1.0.9"
+      <% if (config["vue-router"]) { %>
+      ,"vue-router": "^4.x.x"
+      <% } %>
+      <% if (config["pinia"]) { %>
+      ,"pinia": "^2.x.x"
+      <% } %>
+      <% if (config["axios"]) { %>
+      ,"axios": "^1.x.x"
+      <% } %>
+    },
+    "devDependencies": {
+      "@vitejs/plugin-vue": "^4.2.3",
+      "typescript": "^5.0.2",
+      "vite": "^4.4.5",
+      "vue-tsc": "^1.8.5",
+    }
+}
+  
