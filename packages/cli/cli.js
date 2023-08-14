@@ -3,8 +3,8 @@ import commandLineUsage from 'command-line-usage';
 import gitClone from './utils/gitClone.js';
 import prompts from 'prompts';
 import { readFile } from 'fs/promises';
-import { writePluginsConfig } from './utils/writePluginsConfig';
-import { successLog } from './utils/successLog.js';
+import writePluginsConfig from './utils/writePluginsConfig.js';
+import successLog from './utils/successLog.js';
 const pkg = JSON.parse(
   await readFile(new URL('./package.json', import.meta.url))
 );
@@ -66,7 +66,7 @@ const promptsOptions = [
 const options = commandLineArgs(optionDefinitions);
 
 const remoteList = {
-  1: 'https://github.com/qianyongdong/yodn-ui.git'
+  1: 'https://githubfast.com/qianyongdong/yodn-ui-app.git'
 };
 
 const getUserInfo = async () => {

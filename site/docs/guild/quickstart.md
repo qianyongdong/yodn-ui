@@ -1,33 +1,34 @@
-# 快速开始
+# 快速启动
 
-- 初始化框架
+- 全局安装脚手架并创建项目
 
 ```
+//安装脚手架
+npm install create-yodn-ui -g
+
+//创建项目
 npm create yodn-ui
+
+//通过命令行输入参数创建成功...
 ```
 
-- 安装 pnpm
+-
+- CD 工程目录并安装依赖
 
 ```
-npm install pnpm -g
+//移动到目录
+cd 你的工程
+
+//安装依赖
+npm install
 ```
 
-- 安装依赖
+- 运行项目
 
 ```
-pnpm install
-```
+//运行
+npm run dev
 
-- 打包示例组件库
-
-**注意:** 这里需要先执行一次打包,因为组件库文档引用了打包后的文件
-
-```
-pnpm run yodn-ui:build
-```
-
-- 启动测试项目
-
-```
-pnpm run yodn-ui:dev
+//打包
+npm run build
 ```

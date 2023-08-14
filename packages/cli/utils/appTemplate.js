@@ -1,13 +1,12 @@
 import ejs from 'ejs';
-import fs from 'fs';
 import prettier from 'prettier';
+import fs from 'fs';
 import path from 'path';
-// const ejs = require('ejs');
 // const fs = require('fs');
-// const prettier = require("prettier");
+// const path = require('path');
 
-export function createAppTemplate() {
-    const template = fs.readFileSync(path.resolve('../template/app.ejs').replace(/\\/g, '/'), 'utf-8');
+export default (config) => {
+    const template = fs.readFileSync(path.resolve('./template/app.ejs').replace(/\\/g, '/'), 'utf-8');
     const code = ejs.render(template, {
         config: config,
     })
@@ -15,6 +14,3 @@ export function createAppTemplate() {
         parser: "babel"
     })
 };
-// module.exports = {
-//   createAppTemplate
-// }

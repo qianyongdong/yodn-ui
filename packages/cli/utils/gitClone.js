@@ -13,7 +13,7 @@ export default (remote, name, option) => {
         return;
       }
       downSpinner.succeed(chalk.green('模板下载成功！'));
-      resolve();
+      resolve(true);
     });
   });
 };

@@ -2,12 +2,12 @@
 layout: home
 
 title: yodn-ui
-titleTemplate: 一个快速搭建Vue3组件库的框架
+titleTemplate: 一个实用的Vue3组件库
 
 hero:
   name: yodn-ui
-  text: 一个快速搭建Vue3组件库的框架
-  tagline: 让你的组件库开发更简单
+  text: 一个实用的Vue3组件库
+  tagline: 让你的开发过程更简单
   image:
     /src: /logo.png
     alt: yodn-ui

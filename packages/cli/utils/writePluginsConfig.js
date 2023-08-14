@@ -1,10 +1,11 @@
 import chalk from 'chalk';
 import ora from 'ora';
-import { createPackageTemplate } from './packageTemplate.js'
-import { createMainTemplate } from './mainTemplate.js'
-import { createAppTemplate } from './appTemplate'
-import { downlondPlugin } from './downlondPlugin.js'
-export function writePluginsConfig(plugins, rootName) {
+import createPackageTemplate from './packageTemplate.js'
+import createMainTemplate from './mainTemplate.js'
+import createAppTemplate from './appTemplate.js'
+import downlondPlugin from './downlondPlugin.js'
+import fs from 'fs';
+export default (plugins, rootName) => {
     const rootPath = `./${rootName}/`
     const downSpinner = ora('正在写入插件...').start();
     return new Promise((resolve, reject) => {
@@ -37,7 +38,7 @@ export function writePluginsConfig(plugins, rootName) {
             downlondPlugin(plugins, rootPath).then(response => {
                 //完毕
                 downSpinner.succeed(chalk.green('写入插件成功！'));
-                resolve();
+                resolve(true);
             }, error => {
                 downSpinner.fail();
                 console.log('error', chalk.red(error));

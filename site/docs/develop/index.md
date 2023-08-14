@@ -4,18 +4,25 @@
 <br/>
 
 ```
--- packages
+-- src
 
-  -- cli 脚手架(create-yodn-ui)
+  -- assets 
 
-  -- components 本地开发组件库(@yodn-ui/components)
+  -- components 
 
-  -- yodn-ui 打包后组件库,既要发布的组件库(yodn-ui)
+  -- router
 
-  -- utils 工具包(@yodn-ui/utils)
+  -- store
+  
+  -- api 
 
--- play 测试开发组件库的Vue3项目目录
+  -- App.vue
 
--- site 组件库文档站点目录
+  -- main.ts
+
+-- package.json
+
+-- index.html
+
 
 ```

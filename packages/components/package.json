@@ -1,7 +1,7 @@
 {
   "name": "@yodn-ui/components",
   "version": "1.0.0",
-  "description": "",
+  "description": "一个vue3+ts的组件库",
   "main": "./index.ts",
   "scripts": {
     "build": "vite build",
